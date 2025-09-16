@@ -57,7 +57,7 @@
               <!-- Paper authors -->
               <span class="author-block">
 
-                <a>SUBMISSION ID: paper1317</a></span>
+<!--                <a>SUBMISSION ID: paper1317</a></span>-->
 <!--                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Ning Liu</a><sup>1*</sup>,</span>-->
 <!--                <span class="author-block">-->
 <!--                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Liyuan Liu</a><sup>1*</sup>-->
@@ -159,8 +159,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Owing to its high-quality implicit representation of scene geometry and appearance, radiance field-based 3D reconstruction is extensively applied in photorealistic modeling and rendering tasks including film production, VR/AR, and digital twin applications. Vegetations are among the most abundant organisms on Earth, however, it is a challenge to realistically represent and reconstruct vegetations through radiance fields with less storage consumption because of their complex gemoetry structures with many tiny twigs and thin leaves. To address this challenge, we propose VegMRFP, a framework for vegetation radiance field representation and surface reconstruction using  mixed radiance primitives. Our framework utilizes 2D Gaussian primitives and billboard primitives to represent vegetation stems and lobe clusters respectively, combined with a storage optimization method. Experimental results demonstrate the advantages of our method over existing radiance field-based approaches across 4 evaluation metrics.
-            </p>
+            Owing to its high-quality implicit representation of scene geometry and appearance, radiance field-based 3D reconstruction is extensively applied in photorealistic modeling and rendering tasks including agricultural robotics and digital twin applications. Vegetations are among the most abundant organisms on Earth, however, it is a challenge to realistically represent and reconstruct vegetations through radiance fields with less storage consumption because of their complex gemoetry structures with many tiny twigs and thin leaves. To address this challenge, we propose VegMRFP, a framework for vegetation radiance field representation and surface reconstruction using mixed radiance primitives. Our framework utilizes 2D Gaussian primitives and billboard primitives to represent vegetation stems and lobe clusters respectively, combined with a storage optimization method. Experimental results demonstrate the advantages of our method over existing radiance field-based approaches across 4 evaluation metrics.
+          </p>
         </div>
       </div>
     </div>
@@ -222,7 +222,8 @@
           
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/17WJUmoQvTM?si=4oC2TdaLFnedZD4p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LR1BgzIB_rE?si=p-mHOE3HnS6xzHGK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--            <iframe width="560" height="315" src="https://www.youtube.com/embed/17WJUmoQvTM?si=4oC2TdaLFnedZD4p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
 <!--            <iframe src="https://www.youtube.com/embed/NwFLMc1UG84?si=yaZiJBg_m-TUnkD_" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
 <!--            https://www.youtube.com/embed/JkaxUblCGz0-->
 
@@ -313,7 +314,21 @@
 <!--  </div>-->
 <!--</section>-->
 
-
+<!--  &lt;!&ndash;  begin appendix&ndash;&gt;-->
+<!--  <section class="hero is-small">-->
+<!--    <div class="hero-body">-->
+<!--      <div class="container">-->
+<!--        <h2 class="title is-3">Method</h2>-->
+<!--        &lt;!&ndash; Paper video. &ndash;&gt;-->
+<!--        <div style="text-align: center;"><img width="80%"  src="./static/images/overview.jpg" class="interpolation-image" /></div>-->
+<!--        &lt;!&ndash;        <embed src="static/pdfs/overview.pdf" width="100%" height="600px" type="application/pdf">&ndash;&gt;-->
+<!--        &lt;!&ndash;        <iframe  src="static/pdfs/overview.pdf" width="100%" height="550"></iframe>&ndash;&gt;-->
+<!--        <p>-->
+<!--          The figure shows the workflow of the VegMRFP framework. Starting from multi-view vegetation images and an initial point cloud, we first optimize 2D Gaussian primitives to establish a preliminary radiance field representation of the complete vegetation. Then, we compute SRS for each optimized 2D Gaussian, and employ DBSCAN clustering based on both SH features and SRS to segment stems from lobe clusters. The framework subsequently represents stems using refined 2D Gaussian primitives while modeling the lobe clusters with billboard primitives - jointly optimizing both depth and normal fields to maintain geometric consistency. Finally, we introduce a storage optimization method to minimize storage consumption of the vegetation model.-->
+<!--        </p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
 
   <!-- begin mesh video -->
 <section class="hero is-small">
