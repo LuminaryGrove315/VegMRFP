@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">VegMRFP:Mixed Radiance Field Primitives for 3D Vegetation Reconstruction</h1>
+            <h1 class="title is-1 publication-title">VegMRFP: Mixed Radiance Field Primitives for Vegetation Rendering and Reconstruction</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -84,8 +84,8 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
+                        <a href="./manuscript.pdf" target="_blank"
+                           class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
@@ -105,26 +105,26 @@
 <!--                  </span>-->
 
                   <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/leeyuanl/VegeMRFP" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+<!--                  <span class="link-block">-->
+<!--                    <a href="https://github.com/leeyuanl/VegeMRFP" target="_blank"-->
+<!--                    class="external-link button is-normal is-rounded is-dark">-->
+<!--                    <span class="icon">-->
+<!--                      <i class="fab fa-github"></i>-->
+<!--                    </span>-->
+<!--                    <span>Code</span>-->
+<!--                  </a>-->
+<!--                </span>-->
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-database"></i>
-                  </span>
-                  <span>Dataset</span>
-                </a>
-              </span>
+<!--                <span class="link-block">-->
+<!--                  <a href="" target="_blank"-->
+<!--                  class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                    <i class="fas fa-database"></i>-->
+<!--                  </span>-->
+<!--                  <span>Dataset</span>-->
+<!--                </a>-->
+<!--              </span>-->
             </div>
           </div>
         </div>
@@ -159,8 +159,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Vegetation constitutes one of the most abundant forms of life on Earth, yet accurately representing and reconstructing vegetation using radiance fields with low storage overhead remains a significant challenge. This difficulty arises from the intricate geometry of vegetation, characterized by numerous thin twigs and delicate leaves. To tackle this problem, we introduce VegMRFP, a novel framework for vegetation radiance field representation and surface reconstruction based on mixed radiance primitives. Our method employs 2D Gaussian primitives to model plant stems and billboard primitives to represent clusters of leaves and lobes. Combined with a storage optimization strategy, the framework enables high-quality rendering of vegetation with lower memory cost. Experimental results demonstrate that our method achieves vegetation rendering quality comparable to the state-of-the-art methods, while requiring only 61.3% and 71.2% of the memory cost of BBSplat and 2DGS, respectively.
-          </p>
+            Vegetation constitutes one of the most abundant forms of life on Earth, yet accurately representing and reconstructing vegetation using radiance fields with low storage overhead remains a significant challenge. This difficulty arises from the intricate geometry of vegetation, characterized by numerous thin twigs and delicate leaves. To tackle this problem, we introduce VegMRFP, a novel framework for vegetation rendering and surface reconstruction based on mixed radiance primitives. Our method employs 2D Gaussian primitives to model plant stems and billboard primitives to represent clusters of leaves and lobes. Combined with a storage optimization strategy, the framework enables high-quality rendering of vegetation with lower memory cost. Experimental results demonstrate that our method achieves vegetation rendering quality comparable to the state-of-the-art methods, while requiring only 61.3% and 71.2% of the memory cost of BBSplat and 2DGS, respectively.
+            </p>
         </div>
       </div>
     </div>
@@ -247,6 +247,44 @@
       </div>
     </div>
   </section>
+
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Mesh</h2>
+        <p>
+          Qualitative close-up comparison of reconstructed meshes on virtual and real-world vegetation examples. The enlarged regions show that our method preserves more local geometric structures and visual details in dense foliage, thin branches, and leaf clusters.
+        </p>
+        <div style="text-align: center;"><img width="70%"  src="./static/images/mesh_01.png" class="interpolation-image" /></div>
+
+        <p>
+          Compared with the displayed baselines, our method better preserves local geometric and texture details in foliage regions.
+        </p>
+
+        <div style="text-align: center;"><img width="70%"  src="./static/images/mesh2_01.png" class="interpolation-image" /></div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Stem Details</h2>
+        <p>
+          The first figure shows the Pine example, where clear branching stem structures are preserved in the rendered radiance-field representation. The second figure presents the extracted mesh of the Potted Plant example, which contains relatively curved and intertwined stems. These results demonstrate that VegMRFP can maintain coherent stem geometry and appearance for moderately complex vegetation structures.
+        </p>
+        <div style="text-align: center;"><img width="60%"  src="./static/images/renderdetail.png" class="interpolation-image" /></div>
+        <div style="text-align: center;"><img width="60%"  src="./static/images/stemdetails_01.png" class="interpolation-image" /></div>
+
+      </div>
+    </div>
+  </section>
+
+
+
 <!--  </section>-->
 <!--  <section class="section">-->
 <!--    <div class="container is-max-desktop">-->
@@ -422,12 +460,12 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
+<!--  <section class="section" id="BibTeX">-->
+<!--    <div class="container is-max-desktop content">-->
+<!--      <h2 class="title">BibTeX</h2>-->
+<!--      <pre><code>BibTex Code Here</code></pre>-->
+<!--    </div>-->
+<!--</section>-->
 <!--End BibTex citation -->
 
 
